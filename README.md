@@ -2,6 +2,18 @@
 
 ## Gaol and Purpose
 
+This is the final project to showcase everything I've learned within 15 weeks joining the Data Science Bootcamp at Flatiron School.  Thus, I would like to 
+demonstrate my capabilities and skills that I can condut a project from A to Z solely.  In my previous projects and blogs, I have done several business
+related topics, such as [comapny bankruptcy prediction](https://github.com/JasmineHuang25/Blog4_bankruptcy_prediction) or [vehicle damage prediction](https://github.com/JasmineHuang25/Phase3_project-Vehicle-damage-prediction-for-auto-insurance-use).  I kept asking myself what would be better?  Should I 
+choose another business related topic or do something else as my capstone project?
+It is definitely not easy to finally graduate from the bootcamp.  However, it is also one of the most wonderful and meaningful journey that I have ever taken.
+Before stepping into the real world, this might be the best timing and opportunity for me to do a FUN project.  And this will finalize my journey to Data Science
+with a fun and also professional ending.
+Finally I camp up with this idea of my capstone project.  Fist of all, I will train and find the best model to identify "rock", "scissors", and "paper" using
+Convolutional Neural Network algorithm.  After my model is trained, it will generate a prediction taking in a new input/image.  And the result of its prediction
+will be the gamer to play the classic rock-scissors-paper game with a computer.  Finally, I will need to deploy a web app allows the gamer to join game via a 
+webcam for signing their moves.
+
 
 ## Dataset and EDA
 #### First dataset:
@@ -53,14 +65,17 @@ This the input image captured from the web app
 
 ### CNN: Convolutional Neural Network
 
-### KNN: k-nearest neighbors
+#### Baseline model
 
-## Best Model: CNN
+![Alt Image text](png-------/basline_model_summary)
 
+### Best Model
+
+![Alt Image text](png-------/best_model_summary)
 
 ## Web App Deployment using Gradio
 
-https://gradio.app/
+[Resource](https://gradio.app/)
 
 (Host it on Streamlit or Hugging Face!!)
 
