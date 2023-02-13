@@ -38,7 +38,7 @@ Rock-Paper-Scissors game. All image are taken on a green background with relativ
 All images are RGB images of 300 pixels wide by 200 pixels high in .png format. The images are separated in three sub-folders named 'rock', 'paper' and 'scissors'
 according to their respective class.
 
-![Alt Image text](png-------/dataset2_ex)
+![Alt Image text](Data_and_img/dataset2_ex.png)
 
 #### Third and final dataset:
 [Resource to gather your own images as dataset](https://github.com/CircuitDigest/Rock-Paper-Scissors-with-Pi)
@@ -50,16 +50,16 @@ according to their respective class.
  - Train set: 13500 images (4500 in each class)
  - Test set: 4350 images (1450 in each class)
  - 
-![Alt Image text](png-------/dataset3_ex)
+![Alt Image text](Data_and_img/dataset3_ex.png)
 
 In order to get a better result for the model and prediction, I have trained the model with color-inverted images and will also invert color for the new images
 for prediction. 
 
-![Alt Image text](png-------/dataset3_ex_invert)
+![Alt Image text](Data_and_img/dataset3_ex_invert.png)
 
 This the input image captured from the web app
 
-![Alt Image text](png-------/webapp_input_img)
+![Alt Image text](Data_and_img/webapp_input_img.png)
 
 
 ## Models
@@ -68,16 +68,18 @@ This the input image captured from the web app
 
 #### Baseline model
 
-![Alt Image text](png-------/basline_model_summary)
+![Alt Image text](Data_and_img/basline_model_summary.png)
 
 ### Best Model
 
-![Alt Image text](png-------/best_model_summary)
+![Alt Image text](Data_and_img/best_model_summary.png)
 
 
 ## Web App Deployment using Gradio
 
 [Resource](https://gradio.app/)
+
+![Alt Image text](Data_and_img/webapp_screenshot.png)
 
 (Host it on Streamlit or Hugging Face!!)
 
