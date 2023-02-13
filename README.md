@@ -27,7 +27,7 @@ This dataset contains a total of 2892 images.
 All images are RGB images of 300 pixels wide by 300 pixels high in .png format. The images are separated in three sub-folders named 'rock', 'paper' and 'scissors'
 according to their respective class.
 
- ![Alt Image text](png-------/dataset1_ex)
+ ![Alt Image text](Data_and_img/dataset1_ex.png)
 
 
 #### Second dataset:
@@ -38,7 +38,7 @@ Rock-Paper-Scissors game. All image are taken on a green background with relativ
 All images are RGB images of 300 pixels wide by 200 pixels high in .png format. The images are separated in three sub-folders named 'rock', 'paper' and 'scissors'
 according to their respective class.
 
-![Alt Image text](png-------/dataset2_ex)
+![Alt Image text](Data_and_img/dataset2_ex.png)
 
 #### Third and final dataset:
 [Resource to gather your own images as dataset](https://github.com/CircuitDigest/Rock-Paper-Scissors-with-Pi)
@@ -50,16 +50,16 @@ according to their respective class.
  - Train set: 13500 images (4500 in each class)
  - Test set: 4350 images (1450 in each class)
  - 
-![Alt Image text](png-------/dataset3_ex)
+![Alt Image text](Data_and_img/dataset3_ex.png)
 
 In order to get a better result for the model and prediction, I have trained the model with color-inverted images and will also invert color for the new images
 for prediction. 
 
-![Alt Image text](png-------/dataset3_ex_invert)
+![Alt Image text](Data_and_img/dataset3_ex_invert.png)
 
 This the input image captured from the web app
 
-![Alt Image text](png-------/webapp_input_img)
+![Alt Image text](Data_and_img/webapp_input_img.png)
 
 
 ## Models
@@ -68,21 +68,33 @@ This the input image captured from the web app
 
 #### Baseline model
 
-![Alt Image text](png-------/basline_model_summary)
+The baseline model's training accuracy score is aorund 98%, and the val_accuracy is around 72%.  Although the baseline model is overfitting, it is still a 
+good start.  Will need to add more layers and increase dropout rate to reduce the overfitting.
+
+![Alt Image text](Data_and_img/basline_model_summary.png)
+![Alt Image text](Data_and_img/basline_model_plot.png)
 
 ### Best Model
 
-![Alt Image text](png-------/best_model_summary)
+The best model's training accuracy score is aorund 99%, and the val_accuracy is around 93%.  It is still overfitting.  Increasing data/images should solve the
+problem.
+
+![Alt Image text](Data_and_img/best_model_summary.png)
+![Alt Image text](Data_and_img/best_model_plot.png)
 
 
 ## Web App Deployment using Gradio
 
-[Resource](https://gradio.app/)
+The demo web app was deployed on Gradio. [Resource](https://gradio.app/)
 
-(Host it on Streamlit or Hugging Face!!)
+The player will play the game competing with the computer by making a hand gesture, which will then be captured by a webcam. The image will be processed and 
+passed through the model, which will predict the hand gesture and determine the outcome of the game based on the rules of rock-scissors-paper.
+
+![Alt Image text](Data_and_img/webapp_screenshot.png)
 
 
 ## Limitations and Next Steps
+
 The Rock-Scissors-Paper game using a Convolutional Neural Network (CNN) is a good example of image classification using deep learning. However, there are some
 limitations to this approach that should be addressed in future work.
 1. Limited training data: The performance of the CNN is highly dependent on the amount of training data. In most cases, the model is trained on a small dataset, 
