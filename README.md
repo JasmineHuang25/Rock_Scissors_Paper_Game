@@ -27,7 +27,7 @@ This dataset contains a total of 2892 images.
 All images are RGB images of 300 pixels wide by 300 pixels high in .png format. The images are separated in three sub-folders named 'rock', 'paper' and 'scissors'
 according to their respective class.
 
- ![Alt Image text](png-------/dataset1_ex)
+ ![Alt Image text](Data_and_img/dataset1_ex.png)
 
 
 #### Second dataset:
