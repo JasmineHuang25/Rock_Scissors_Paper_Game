@@ -68,23 +68,33 @@ This the input image captured from the web app
 
 #### Baseline model
 
+The baseline model's training accuracy score is aorund 98%, and the val_accuracy is around 72%.  Although the baseline model is overfitting, it is still a 
+good start.  Will need to add more layers and increase dropout rate to reduce the overfitting.
+
 ![Alt Image text](Data_and_img/basline_model_summary.png)
+![Alt Image text](Data_and_img/basline_model_plot.png)
 
 ### Best Model
 
+The best model's training accuracy score is aorund 99%, and the val_accuracy is around 93%.  It is still overfitting.  Increasing data/images should solve the
+problem.
+
 ![Alt Image text](Data_and_img/best_model_summary.png)
+![Alt Image text](Data_and_img/best_model_plot.png)
 
 
 ## Web App Deployment using Gradio
 
-[Resource](https://gradio.app/)
+The demo web app was deployed on Gradio. [Resource](https://gradio.app/)
+
+The player will play the game competing with the computer by making a hand gesture, which will then be captured by a webcam. The image will be processed and 
+passed through the model, which will predict the hand gesture and determine the outcome of the game based on the rules of rock-scissors-paper.
 
 ![Alt Image text](Data_and_img/webapp_screenshot.png)
 
-(Host it on Streamlit or Hugging Face!!)
-
 
 ## Limitations and Next Steps
+
 The Rock-Scissors-Paper game using a Convolutional Neural Network (CNN) is a good example of image classification using deep learning. However, there are some
 limitations to this approach that should be addressed in future work.
 1. Limited training data: The performance of the CNN is highly dependent on the amount of training data. In most cases, the model is trained on a small dataset, 
