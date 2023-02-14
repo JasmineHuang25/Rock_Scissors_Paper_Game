@@ -17,7 +17,7 @@ In conclusion, the goal of my capstone project is to develop a functional rock-s
 
 ## Dataset and EDA
 
-#### First dataset:
+### 1st dataset:
 [Resource](https://laurencemoroney.com/datasets.html#rock-paper-scissors-dataset)
 
 This dataset contains a total of 2892 images.
@@ -30,7 +30,7 @@ according to their respective class.
  ![Alt Image text](Data_and_img/dataset1_ex.png)
 
 
-#### Second dataset:
+### 2nd dataset:
 [Resource](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors)
 
 The dataset contains a total of 2188 images corresponding to the 'Rock' (726 images), 'Paper' (710 images) and 'Scissors' (752 images) hand gestures of the
@@ -40,7 +40,7 @@ according to their respective class.
 
 ![Alt Image text](Data_and_img/dataset2_ex.png)
 
-#### Third and final dataset:
+### 3rd and final dataset:
 [Resource to gather your own images as dataset](https://github.com/CircuitDigest/Rock-Paper-Scissors-with-Pi)
 
 My web app will be capture the image from the webcam as the input to my model's prediciton.  It will be better to train my model with the real images captured by
@@ -49,7 +49,7 @@ All images are RGB images of 252 pixels wide by 188 pixels high in .jpg format. 
 according to their respective class.
  - Train set: 13500 images (4500 in each class)
  - Test set: 4350 images (1450 in each class)
- - 
+ 
 ![Alt Image text](Data_and_img/dataset3_ex.png)
 
 In order to get a better result for the model and prediction, I have trained the model with color-inverted images and will also invert color for the new images
@@ -83,14 +83,14 @@ problem.
 ![Alt Image text](Data_and_img/best_model_plot.png)
 
 
-## Web App Deployment using Gradio
+## Web App Deployment on Streamlit
 
-The demo web app was deployed on Gradio. [Resource](https://gradio.app/)
+The demo web app was deployed on Streamlit. [Link to Web App](https://jasminehuang25-rock-scissors-paper-game-streamlit-webapp-irt5uq.streamlit.app/)
 
 The player will play the game competing with the computer by making a hand gesture, which will then be captured by a webcam. The image will be processed and 
 passed through the model, which will predict the hand gesture and determine the outcome of the game based on the rules of rock-scissors-paper.
 
-![Alt Image text](Data_and_img/webapp_screenshot.png)
+![Alt Image text](Data_and_img/stwebapp_screenshot.png)
 
 
 ## Limitations and Next Steps
